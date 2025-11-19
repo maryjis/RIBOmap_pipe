@@ -1,5 +1,11 @@
-# RIBOmap_pipe
-**RIBOmap** is a protocol for spatial translatome mapping. This pipeline is implemented in **Jupyter Notebooks**, providing an interactive environment for reproducible analyses including such steps as image registration, stitching, cell segmentation and read assignment according to [https://www.nature.com/articles/s41596-025-01248-3](https://www.nature.com/articles/s41596-025-01248-3).
+# SpatialOmics-RNA-Toolkit
+This repository provides a fully integrated, reproducible, and interactive Jupyter Notebook-based pipeline for spatial omics data analysis. It supports major steps including deconvolution, image registration, stitching, cell segmentation, and read assignment, enabling users to generate spatially resolved single-cell RNA and protein profiles.
+
+The pipeline is compatible with methods such as STARmap PLUS, RIBOmap, and TEMPOmap, allowing researchers to explore spatial and temporal RNA dynamics in heterogeneous cells and tissues. Designed for ease of use, it leverages sparse-deconv-py, starfinder, and StarDist for high-quality, reproducible results.
+
+Users can follow guided notebooks to process raw microscopy images into single-cell spatial transcriptome and translatome maps, making this toolkit ideal for both novice and experienced spatial omics researchers.
+
+**SpatialOmics-RNA-Toolkit** is a protocol for spatial translatome mapping. This pipeline is implemented in **Jupyter Notebooks**,  according to [https://www.nature.com/articles/s41596-025-01248-3](https://www.nature.com/articles/s41596-025-01248-3).
 
 
 **Steps**
