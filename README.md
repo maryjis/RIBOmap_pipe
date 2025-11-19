@@ -12,9 +12,7 @@ Users can follow guided notebooks to process raw microscopy images into single-c
 1. **Deconvolution**  - is used to minimize out-of-focus background . In this repo [sparse-deconv-py](https://github.com/WeisongZhao/sparse-deconv-py) is used , see notobook [link]
    <img width="1230" height="730" alt="image" src="https://github.com/user-attachments/assets/485f1740-da33-43e8-97e0-fc40922a97e3" />
 
-3. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install
-
-Create starfinder enviroment:
+3. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install ***MATLAB 2023b or newer*** and create starfinder enviroment:
   ```
   conda env create --file config/environment.yaml
   
