@@ -28,7 +28,7 @@ Create starfinder enviroment:
   reads_stitching('~/sample-dataset/tissue-2D/dataset-info.json')
   quit()
   ```
-Next, you can choose which segmentation method you want to use, or try both and select the best one (recommended):
+5. **Cell segmentation and read assignmnets** Next, you can choose which cell segmentation method you want to use, or try both and select the best one (recommended):
 
-1. **StarDist [link]**
-2.  **ClusterMap [link]**
+   - **StarDist [link]**
+   - **ClusterMap [link]**
