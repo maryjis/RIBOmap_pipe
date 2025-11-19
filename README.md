@@ -4,12 +4,14 @@
 
 **Steps**
 1. **Deconvolution**  - is used to minimize out-of-focus background . In this repo [sparse-deconv-py](https://github.com/WeisongZhao/sparse-deconv-py) is used , see notobook [link]
-2. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install MATLAB
+2. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install
+
+Create starfinder enviroment:
   ```
   conda env create --file config/environment.yaml
   
   ```
-  Run MATLAB:
+  Run using starfinder & MATLAB:
   
   ```
   addpath('./code-base/src', './example/sequential_workflow')
@@ -17,3 +19,13 @@
   json')
   ```
 3. **Stitching** is the process of combining multiple images or image fragments into a single large, seamless image. This repo contains jupyter notebook[] with ability to run pyimagej as script without GUI.
+
+4. **Merging detected amplicon signals of each FOV**
+   Run using starfinder & MATLAB:
+  ```
+  reads_stitching('~/sample-dataset/tissue-2D/dataset-info.json')
+  quit()
+  ```
+Next, you can choose which segmentation method you want to use, or try both and select the best one (recommended):
+**StarDist [link] **
+**ClusterMap [link]**
