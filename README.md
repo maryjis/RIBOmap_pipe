@@ -27,5 +27,6 @@ Create starfinder enviroment:
   quit()
   ```
 Next, you can choose which segmentation method you want to use, or try both and select the best one (recommended):
-**StarDist [link] **
-**ClusterMap [link]**
+
+1. **StarDist [link]**
+2.  **ClusterMap [link]**
