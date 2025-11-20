@@ -39,9 +39,19 @@ Users can follow guided notebooks to process raw microscopy images into single-c
    - **[StarDist](https://github.com/stardist/stardist)**
      1) For StarDist segmentation firstly run step 2. Fused DAPI staining and sequencing image in   [2.stitching_and_pyimage_steps.ipynb](2.stitching_and_pyimage_steps.ipynb) for receiving overlay.tif image
      2) Next use [3.stardist_segmentation.ipynb](stardist_segmentation.ipynb) for cell segmentation
-     3) For read assigment move on to starfinder enviroment and run following script:
+     3) For read assigment move on to starfinder enviroment and run following script. Before running script move on your genes.csv and grid.csv to documents subdirectory:
         ```conda activate starfinder
             python example/sequential_workflow/reads_assignment.py ~/sample-dataset/tissue-2D/datasetinfo.json
         ```
    - **[ClusterMap](https://github.com/wanglab-broad/ClusterMap)**
-
+  
+     Before running ClusterMap copy your genes.csv and grid.csv to documents subdirectory. The run following commands:
+     First for cell segmentation of each tile:
+      ``` conda activate starfinder
+         python example/sequential_workflow/run_clustermap.py ~/sample-dataset/tissue-2D/datasetinfo.json
+      ```
+      Then stitch them and read assignments:
+     
+      ```
+         python example/sequential_workflow/stitch_clustermap.py ~/sample-dataset/tissue-2D/dataset-info.json
+      ```
