@@ -7,7 +7,7 @@ The pipeline is compatible with methods such as STARmap PLUS, RIBOmap, and TEMPO
 
 Users can follow guided notebooks to process raw microscopy images into single-cell spatial transcriptome and translatome maps, making this toolkit ideal for both novice and experienced spatial omics researchers.
 
-**SpatialOmics-RNA-Toolkit** is a protocol for spatial translatome mapping. This pipeline is implemented in **Jupyter Notebooks**,  according to [https://www.nature.com/articles/s41596-025-01248-3](https://www.nature.com/articles/s41596-025-01248-3).
+**SpatialOmics-RNA-Toolkit** is a protocol for spatial translatome mapping. This pipeline is implemented in **Jupyter Notebooks**,  according to [Spatially resolved in situ profiling of mRNA life cycle at transcriptome scale in intact cells and tissues using STARmap PLUS, RIBOmap and TEMPOmap(1)](https://www.nature.com/articles/s41596-025-01248-3).
 
 
 **Steps**
@@ -21,7 +21,7 @@ Users can follow guided notebooks to process raw microscopy images into single-c
     In this repo [sparse-deconv-py](https://github.com/WeisongZhao/sparse-deconv-py) is used , see notobook [1.deconvolution.ipynb](1.deconvolution.ipynb)
    <img width="1230" height="730" alt="image" src="https://github.com/user-attachments/assets/485f1740-da33-43e8-97e0-fc40922a97e3" />
 
-3. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install ***MATLAB 2023b or newer*** and create starfinder enviroment:
+3. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in [(1)](https://www.nature.com/articles/s41596-025-01248-3). You need previously install ***MATLAB 2023b or newer*** and create starfinder enviroment:
   ```
   conda env create --file config/environment.yaml
   
