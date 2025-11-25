@@ -11,7 +11,14 @@ Users can follow guided notebooks to process raw microscopy images into single-c
 
 
 **Steps**
-1. **Deconvolution**  - is used to minimize out-of-focus background . In this repo [sparse-deconv-py](https://github.com/WeisongZhao/sparse-deconv-py) is used , see notobook [1.deconvolution.ipynb](1.deconvolution.ipynb)
+1. **Deconvolution**  - is used to minimize out-of-focus background .
+   ```
+   conda create -n deconv python=3.10 -y
+   conda install -c conda-forge numpy=1.26.4 scipy=1.13.1 matplotlib=3.9.4 pywavelets-y
+   conda install -c conda-forge cupy cudatoolkit=11.5 -y
+   ```
+
+    In this repo [sparse-deconv-py](https://github.com/WeisongZhao/sparse-deconv-py) is used , see notobook [1.deconvolution.ipynb](1.deconvolution.ipynb)
    <img width="1230" height="730" alt="image" src="https://github.com/user-attachments/assets/485f1740-da33-43e8-97e0-fc40922a97e3" />
 
 3. **Image Registration and Reads extraction** Use [starfinder](https://github.com/wanglab-broad/starfinder) as in []. You need previously install ***MATLAB 2023b or newer*** and create starfinder enviroment:
